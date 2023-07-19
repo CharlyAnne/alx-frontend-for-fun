@@ -2,7 +2,7 @@
 
 ## Learning Objectives
 
-At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
+At the end of this project, we are expected to be able to explain to anyone, without the help of Google:
 
 What is Flexbox?
 How to convert float positioning to a flex display
