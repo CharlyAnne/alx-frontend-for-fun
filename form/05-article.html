@@ -64,7 +64,7 @@
     </header>
     <!-- Main -->
     <main>
-      <!-- Hero Section -->
+      <!-- Hero section -->
       <header
         class="section-hero hero-article"
         data-section-theme="dark"
@@ -174,7 +174,7 @@
                 memoriae cognoscenda, curiosorum.
               </p>
             </article>
-            <!--Aside Section-->
+            <!-- Aside section -->
             <aside class="post-aside">
               <div class="post-meta">
                 <ul class="post-meta-list row">
@@ -240,8 +240,11 @@
               <h2 class="section-title">Leave a comment</h2>
               <p>All fields are required.</p>
             </header>
-            <form action="#" method="post">
-              <fieldset legend="Your personal information" class="">
+            <form action="#" method="POST">
+              <fieldset>
+                <legend class="visually-hidden">
+                  Your personal information
+                </legend>
                 <div class="form-group col-1-2">
                   <label for="your-first-name">First Name</label>
                   <div class="form-field">
@@ -251,14 +254,18 @@
                         name="your-first-name"
                         id="your-first-name"
                         placeholder="e.g. Mike"
+                        pattern="[A-Za-zÀ-ž\s]{3,}"
                         maxlength="35"
                         autocomplete="on"
-                        required
-                        pattern="[A-Za-zÀ-ž\s]{3,}"
                         accesskey="f"
+                        required
                       />
                       <i class="form-field-icon"></i>
                     </span>
+                    <p class="form-help">
+                      First name should be at least 3 characters and only
+                      contains letters
+                    </p>
                   </div>
                 </div>
                 <div class="form-group col-1-2">
@@ -270,13 +277,18 @@
                         name="your-last-name"
                         id="your-last-name"
                         placeholder="e.g. Smith"
+                        pattern="[A-Za-zÀ-ž\s]{3,}"
                         maxlength="40"
                         autocomplete="on"
-                        required
-                        pattern="[A-Za-zÀ-ž\s]{3,}"
                         accesskey="l"
+                        required
                       />
+                      <i class="form-field-icon"></i>
                     </span>
+                    <p class="form-help">
+                      Last name should be at least 3 characters and only
+                      contains letters
+                    </p>
                   </div>
                 </div>
                 <div class="form-group col-2-3">
@@ -288,17 +300,19 @@
                         name="your-email"
                         id="your-email"
                         placeholder="e.g. youremail@gmail.com"
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                         maxlength="55"
                         autocomplete="on"
-                        required
-                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$ "
                         accesskey="e"
+                        required
                       />
+                      <i class="form-field-icon"></i>
                     </span>
                   </div>
                 </div>
               </fieldset>
-              <fieldset legend="Your comment" class="">
+              <fieldset>
+                <legend class="visually-hidden">Your comment</legend>
                 <div class="form-group col-2-3">
                   <label for="your-title">Title</label>
                   <div class="form-field">
@@ -308,13 +322,18 @@
                         name="your-title"
                         id="your-title"
                         placeholder="e.g. I loved that article"
+                        pattern="[A-Za-zÀ-ž\s]{4,}"
                         maxlength="75"
                         autocomplete="on"
-                        required
-                        pattern="[A-Za-zÀ-ž\s]{4,}"
                         accesskey="t"
+                        required
                       />
+                      <i class="form-field-icon"></i>
                     </span>
+                    <p class="form-help">
+                      Title should be at least 4 characters and only contains
+                      letters
+                    </p>
                   </div>
                 </div>
                 <div class="form-group col-2-3">
@@ -326,13 +345,16 @@
                         id="your-comment"
                         placeholder="Write your comment here"
                         minlength="10"
-                        required
+                        accesskey="c"
                         cols="30"
                         rows="6"
-                        accesskey="c"
-                      >
-                      </textarea>
+                        required
+                      ></textarea>
+                      <i class="form-field-icon"></i>
                     </span>
+                    <p class="form-help">
+                      Comment should be at least 10 characters
+                    </p>
                   </div>
                 </div>
                 <div class="form-group">
@@ -344,7 +366,7 @@
         </div>
       </div>
     </main>
-    <!-- Foooter-->
+    <!-- Footer -->
     <footer class="footer" data-section-theme="dark">
       <div class="container">
         <div class="row">
