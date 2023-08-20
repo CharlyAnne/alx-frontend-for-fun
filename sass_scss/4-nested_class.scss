@@ -3,7 +3,7 @@ $text-color-red: #ff0000;
 
 body {
   color: $text-color;
-  body.red {
+  body .red {
     color: $text-color-red;
   }
 }
