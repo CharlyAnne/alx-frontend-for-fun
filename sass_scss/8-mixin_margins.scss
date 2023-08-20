@@ -1,0 +1,20 @@
+$text-color: #3d3d3d;
+$text-color-red: #ff0000;
+$button-hover-color: #00ff00;
+$body-font-size: 14px;
+$h1-font-size: 16px;
+$h1-font-smaller: 12px;
+
+/* Mixin decalrations */
+@mixin setMargins($left, $right) {
+  margin-left: $left;
+  margin-right: $right;
+}
+
+body {
+  @include setMargins(10px, 10px);
+}
+
+div {
+  @include setMargins(15px, 15px);
+}
