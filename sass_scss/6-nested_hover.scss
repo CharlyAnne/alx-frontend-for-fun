@@ -1,0 +1,10 @@
+$text-color: #3d3d3d;
+$text-color-red: #ff0000;
+$button-hover-color: #00ff00;
+
+button {
+  color: $text-color-red;
+  button:hover {
+    color: $button-hover-color;
+  }
+}
